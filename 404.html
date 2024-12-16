@@ -1,5 +1,25 @@
 <!DOCTYPE html>
-<meta charset="utf-8">
-<title>Redirecting to https://panacotar.github.io/blog/</title>
-<meta http-equiv="refresh" content="0; URL=https://panacotar.github.io/blog/">
-<link rel="canonical" href="https://panacotar.github.io/blog/">
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="canonical" href="https://panacotar.github.io/blog/">
+
+    <title>404 - redirect to https://panacotar.github.io/blog/</title>
+    <script>
+      pathName = window.location.pathname;
+      window.location.replace("https://panacotar.github.io/blog" + pathName);
+    </script>
+</head>
+
+<body>
+  <p>If redirecting takes too long, click <a id="redirectLink" href="#">here</a>.</p>
+    <script>
+        // Update the fallback link to match the destination
+        document.getElementById('redirectLink').href = "https://panacotar.github.io/blog" + pathName;
+    </script>
+</body>
+
+</html>
