@@ -10,7 +10,7 @@
     <title>404 - redirect to https://panacotar.github.io/blog/</title>
     <script>
       pathName = window.location.pathname;
-      window.location.replace("https://panacotar.github.io/blog" + pathName);
+      window.location.replace("https://panacotar.github.io" + pathName);
     </script>
 </head>
 
@@ -18,7 +18,7 @@
   <p>If redirecting takes too long, click <a id="redirectLink" href="#">here</a>.</p>
     <script>
         // Update the fallback link to match the destination
-        document.getElementById('redirectLink').href = "https://panacotar.github.io/blog" + pathName;
+        document.getElementById('redirectLink').href = "https://panacotar.github.io" + pathName;
     </script>
 </body>
 
